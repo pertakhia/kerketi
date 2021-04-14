@@ -1,0 +1,86 @@
+<section class="background">
+    <div class="container">
+        <div class="box-flex">
+            <div class="left-box">
+                <div class="left-box-flex">
+                    <h3>ავტორიზაცია</h3>
+                    <form (ngSubmit)="onSubmit(postData.value)" #postData="ngForm" class="form-flex">
+                        <div class="avtive-module" >
+                            <div class="active-module-position">
+                                <button 
+                                   (click)="closeBtn()" 
+                                   type="button" 
+                                   class="close-module"
+                                   >X</button>
+                                <h1 class="center">{{result}}</h1>
+                            </div>
+                        </div>
+                        <label for="username"> მობილური </label>
+                        <input 
+                           type="text" 
+                           placeholder="მომხმარებლის მობილურის ნომერი"
+                           id="usename"
+                           ngModel
+                           name="username"
+                           required
+                           >
+                        <div class="domain">
+                        <label for="domainId"></label>
+                        <input 
+                           type="number" 
+                           id="domainId"
+                           [ngModel]="domainId"
+                           name="domainId"
+                           value="1"
+                           required
+                           >
+                        <label for="languageId"></label>
+                        <input 
+                           type="number" 
+                           id="languageId"
+                           [ngModel]="languageId"
+                           name="languageId"
+                           required
+                           >
+                        </div>
+                        <label for="password"> პაროლი </label>
+                        <input 
+                           type="password" 
+                           placeholder="პაროლი"
+                           id="password"
+                           ngModel
+                           name="password"
+                           required
+                           >
+                        <p class="form-paragrap">დაგავიწყდა პაროლი?</p>
+                        <div class="submit-btn-center">
+                            <button 
+                               type="submit" 
+                               class="submit-btn"
+                               [disabled]="!postData.valid"
+                               >შესვლა</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right-box">
+                <div class="registration">
+                    <h4>არ ხარ დარეგისტრირებული?</h4>
+                    <button type="button" class="btn-registration" disabled> რეგისტრაცია </button>
+                </div>
+                <div class="app-ios-android">
+                    <h5>ისარგებლეთ კერკეტის განახლებული <span class="mob-bank"> მობაილ ბანკით </span></h5>
+                    <p>გადმოწერეთ<span class="ios"> IOS </span> და <span class="ios">Android</span></p>
+                    <div class="ios-android-flex">
+                        <button type="button" class="btn-ios">
+                            <img  class="img-ios" src="../../assets/app-store.png" alt="app story"/>
+                        </button>
+                        <button type="button" class="btn-ios">
+                            <img class="img-ios" src="../../assets/google-play.png" alt="google play"/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

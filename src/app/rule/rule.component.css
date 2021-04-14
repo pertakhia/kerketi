@@ -1,0 +1,84 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css");
+
+@font-face {
+    font-family: 'GARistra-Regular';
+    src: url('../font/GARistra-Regular.svg') format('svg'),
+         url('../font/GARistra-Regular.ttf') format('truetype'),
+         url('../font/GARistra-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'tanamedrovea.cec41786d4274e7792db';
+    src: url('../font/tanamedrovea.cec41786d4274e7792db.eot');
+    src: url('../font/tanamedrovea.cec41786d4274e7792db.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.background {
+    min-height: calc(100vh);
+    background-image: url(../../assets/background.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.container {
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.rule {
+    width: 100%;
+    background-color: #fcfcfcbf;
+    border-radius: 8px;
+}
+
+.rule-width {
+    padding: 2.5rem;
+}
+
+.rule h1 {
+    font-size: 65px!important;
+    font-family: 'GARistra-Regular';
+    color: #1f4287;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.rule p {
+    font-family: "BPG Mrgvlovani", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #212529;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.rule p:last-child {
+    margin-bottom: 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 960px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container{
+        width: 690px;
+    }
+}
+
+@media only screen and (max-width: 792px) {
+    .background {
+        padding: 20px 50px;
+    }
+}

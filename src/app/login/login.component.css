@@ -1,0 +1,389 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css");
+
+@font-face {
+    font-family: 'GARistra-Regular';
+    src: url('../font/GARistra-Regular.svg') format('svg'),
+         url('../font/GARistra-Regular.ttf') format('truetype'),
+         url('../font/GARistra-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'tanamedrovea.cec41786d4274e7792db';
+    src: url('../font/tanamedrovea.cec41786d4274e7792db.eot');
+    src: url('../font/tanamedrovea.cec41786d4274e7792db.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.background {
+    min-height: calc(100vh);
+    background-image: url(../../assets/background.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.domain {
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    top: 0;
+}
+.avtive-module {
+    display: none;
+}
+.module {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#ecefef;
+    display: inline-block;
+    width: 500px;
+    max-width: 100%;
+    height: 450px;
+    border-radius: 50px;
+}
+.active-module-position {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    font-family: "BPG Mrgvlovani", sans-serif;
+    color: #000000;
+    font-size: 16px;
+}
+.close-module {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    border: none;
+    background: inherit;
+    font-size: 21px;
+    cursor: pointer;
+    color: red;
+    transition: 0.5s;
+
+}
+.close-module:focus {
+    outline: none;
+}
+.close-module:hover {
+    transform: scale(1.02);
+}
+
+.container {
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.box-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 85px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.left-box {
+    width: 613px;
+    height: 100%;
+    border-radius: 50px;
+    background: #fffffff2;
+    padding: 30px 20px;
+}
+
+.left-box-flex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+.left-box-flex > h3 {
+    font-size: 80px!important;
+    color: #a9a9a9;
+    font-weight: 500;
+    font-family: 'GARistra-Regular';
+    margin: 10px 0 40px 0;
+}
+
+.form-flex > label {
+    font-family: "BPG Mrgvlovani", sans-serif;
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    color: #071e3d;
+}
+.form-flex > input[type="text"],  input[type="password"]{
+    display: inline-block;
+    max-width: 100%;
+    height: 20px;
+    background: #ffffff;
+    border: 1px solid #d9d9e6;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border 0.15s ease-in-out;
+    margin-bottom: 35px;
+}
+.form-flex > input[type="password"] {
+    margin-bottom: 25px;
+}
+.form-flex > input[type="text"]:focus, input[type="password"]:focus {
+    border: 1px solid #1f4287;
+    outline: none;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+.form-paragrap {
+    flex: 1;
+    align-self: flex-start;
+    border-bottom: 1px solid #758192;
+    transition: 0.3s;
+    color: #758192;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.form-paragrap:hover {
+    color: #071e3d;
+    border-bottom: 1px solid #071e3d;
+}
+
+.submit-btn {
+    border: 1px solid #646464;
+    background: transparent;
+    width: 160px;
+    height: 40px;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 4px;
+    transition: 0.3s;
+    padding: 0 15px;
+    font-family: "BPG Mrgvlovani", sans-serif;
+    color: #000000;
+    cursor: pointer;
+}
+.submit-btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn:hover {
+    background: #db0011;
+    color: #fff;
+    border-color: transparent;
+}
+.submit-btn:focus {
+    outline: none;
+}
+/* რეგისტრაცის სტილი */
+.registration {
+    width: 294px;
+    padding: 30px;
+    background: #fffffff2;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration h4 {
+    font-size: 12px;
+    color: #071e3d;
+    font-family: "BPG Mrgvlovani", sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+}
+.btn-registration {
+    border: 1px solid #646464;
+    background-color: transparent;
+    width: 160px;
+    cursor: pointer;
+    padding: 0 1.25rem;
+    font-family: "BPG Mrgvlovani", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+    transition: .3s;
+    height: 40px;
+    margin-top: 20px;
+    font-weight: 400;
+    color: #212529;
+    transition: 0.3s;
+}
+.btn-registration:hover {
+    background: #db0011;
+    color: #fff;
+    border-color: transparent;
+}
+
+/* განახლებული მობაილ ბანკის სტილი */
+
+.app-ios-android {
+    width: 294px;
+    height: 220px;
+    padding: 30px;
+    background: #fffffff2;
+    border-radius: 50px;
+}
+.app-ios-android h5 {
+    color: #212529;
+    font-family: "BPG Mrgvlovani", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 1rem;
+}
+.app-ios-android p {
+    font-family: "BPG Mrgvlovani", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 2rem;
+}
+.mob-bank {
+    color: #db0011;
+    font-size: 14px;
+}
+
+.ios {
+    font-size: 14px;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+}
+.ios:hover {
+    color: #db0011;
+    transition: .4s;
+}
+.right-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ios-android-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-ios {
+    display: inherit;
+    padding: 0;
+    width: 103px;
+    border: none;
+    background: inherit;
+    cursor: pointer;
+}
+.btn-ios:focus{
+    outline: none;
+}
+
+.img-ios {
+    width: 100%;
+}
+
+/* response 1200px css */
+@media only screen and (max-width: 1200px) {
+    .container{
+        width: 960px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .box-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .left-box {
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        background: #fffffff2;
+        padding: 30px 20px;
+        margin-bottom: 85px;
+    }   
+    .right-box {
+        width: 100%;
+        align-items: center;
+    }
+    .registration {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 85px;
+    }
+    .app-ios-android {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container{
+        width: 690px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .container{
+        width: 510px;
+    }
+}
+
+@media only screen and (max-width: 559px) {
+    .container{
+        width: 320px;
+    }
+    .form-flex {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 392px) {
+    .background {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .left-box  {
+        margin-bottom: 50px;
+    }
+    .registration {
+        margin-bottom: 50px;
+    }
+    .box-flex {
+        padding-top: 50px;
+    }
+}
