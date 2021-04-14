@@ -7,11 +7,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
-  {path: 'kerketi/about', component: AboutComponent},
-  {path: 'kerketi/use', component: UseComponent},
-  {path: 'kerketi/rule', component: RuleComponent},
-  {path: 'kerketi/contact', component: ContactComponent},
-  {path: 'kerketi', component: LoginComponent}
+  {path: 'about', component: AboutComponent},
+  {path: 'use', component: UseComponent},
+  {path: 'rule', component: RuleComponent},
+  {path: 'contact', component: ContactComponent},
+  {path: '', component: LoginComponent}
 ];
 
 @NgModule({
